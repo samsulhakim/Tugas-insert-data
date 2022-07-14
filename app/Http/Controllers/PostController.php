@@ -77,14 +77,14 @@ class PostController extends Controller
             return redirect()
                 ->route('post.index')
                 ->with([
-                    'success' => 'Post has been updated successfully'
+                    'success' => 'Datamu sukses di update bro'
                 ]);
         } else {
             return redirect()
                 ->back()
                 ->withInput()
                 ->with([
-                    'error' => 'Some problem has occured, please try again'
+                    'error' => 'Datamu gagal di update bro, jajalen maneh nggeh'
                 ]);
         }
     }
@@ -98,13 +98,13 @@ class PostController extends Controller
             return redirect()
                 ->route('post.index')
                 ->with([
-                    'success' => 'Post has been deleted successfully'
+                    'success' => 'Datamu wes di hapus bro'
                 ]);
         } else {
             return redirect()
                 ->route('post.index')
                 ->with([
-                    'error' => 'Some problem has occurred, please try again'
+                    'error' => 'Datamu gagal di hapus bro, jajalen maneh'
                 ]);
         }
     }
